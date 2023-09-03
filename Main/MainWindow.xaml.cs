@@ -22,6 +22,8 @@ namespace Main
     {
         public MainWindow()
         {
+            MainWindow_ViewModel vm = new MainWindow_ViewModel();
+            DataContext = vm;
             InitializeComponent();
         }
     }

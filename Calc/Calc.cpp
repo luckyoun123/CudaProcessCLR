@@ -2,9 +2,12 @@
 //
 
 #include "pch.h"
-#include "framework.h"
-
-// TODO: 라이브러리 함수의 예제입니다.
-void fnCalc()
+#include "Calc.h"
+int Calc::sumAB(int a, int b)
 {
+	return a + b;
+}
+int Calc::sumCD(int c, int d)
+{
+	return c + d;
 }

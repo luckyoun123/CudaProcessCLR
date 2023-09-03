@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Value 1 : "/>
+                <TextBox Text="{Binding p_nValue1}" Width="50"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Value 2 : "/>
+                <TextBox Text="{Binding p_nValue2}" Width="50"/>
+            </StackPanel>
+            <Button Content="Calcurate" Width="60" Height="30" 
+                    HorizontalAlignment="Left" Command="{Binding CmdCalcurate}"></Button>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="result : "/>
+                <TextBox Text="{Binding p_nResult}" Width="50"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
